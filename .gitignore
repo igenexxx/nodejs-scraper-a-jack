@@ -1,0 +1,3 @@
+**/node_modules
+/.idea
+./project-1/creds.json
