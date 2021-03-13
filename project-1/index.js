@@ -17,7 +17,6 @@ async function fetchPage(sheet, i = 1) {
 
   console.log('Row length:', row.length, ' page:', i);
 
-  // return [].concat(row.length ? await fetchPage(sheet,i + 1) : []);
   return !row.length ? [] : [...row, ...await fetchPage(sheet,i + 1)];
 }
 
